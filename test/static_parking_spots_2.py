@@ -15,13 +15,16 @@ def load_rectangles(file_path):
     return rectangles
 
 # Wczytaj współrzędne z pliku
-rectangles = load_rectangles("rectangles_1_modified.txt")
+rectangles = load_rectangles("rectangles_2_modified.txt")
+
+# Ustawienie początkowego numeru dla tej części parkingu
+start_number = 8
 
 cv2.namedWindow("Podgląd wideo", cv2.WINDOW_NORMAL)  # Wymuszenie działania okna na Mac/Linux
 
-#video_path = "parking_clear.mp4" # kawałek parkingu bez pojazdów
-#video_path = "parking_full_1.mp4"  # cały filmik
-video_path = "parking_z_pojazdami.mp4"  # kawałek parkingu z pojazdami
+#video_path = "parking_2_clear.mp4" #kawałek parkingu bez pojazdów
+#video_path = "parking_2_clear.mp4" # cały filmik
+video_path = "parking_z_pojazdami_2.mp4" # kawałek z pojazdami
 
 cap = cv2.VideoCapture(video_path)
 
@@ -35,9 +38,10 @@ while cap.isOpened():
         print("Koniec filmu lub błąd odczytu.")
         break
 
-    # Narysuj prostokąty i podpisz ich numery
+    # Narysuj prostokąty i podpisz ich rzeczywiste numery
     for i, rect in enumerate(rectangles):
         x, y, w, h = rect
+        real_number = start_number + i  # Numeracja zaczyna się od `start_number`
 
         # Rysowanie prostokąta
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
@@ -45,13 +49,13 @@ while cap.isOpened():
         # Dodawanie numeru prostokąta
         cv2.putText(
             frame,
-            f"{i + 1}",            # Numer miejsca parkingowego (zgodny z kolejnością)
-            (x, y - 10),            # Pozycja tekstu (nad prostokątem)
+            str(real_number),      # Numer rzeczywisty miejsca
+            (x, y - 10),           # Pozycja tekstu (nad prostokątem)
             cv2.FONT_HERSHEY_SIMPLEX, 
-            0.6,                    # Rozmiar czcionki
-            (0, 255, 0),            # Kolor tekstu (zielony)
-            2,                      # Grubość linii tekstu
-            cv2.LINE_AA             # Antyaliasing
+            0.6,                   # Rozmiar czcionki
+            (0, 255, 0),           # Kolor tekstu (zielony)
+            2,                     # Grubość linii tekstu
+            cv2.LINE_AA            # Antyaliasing
         )
 
     # Wyświetlenie ramki wideo z prostokątami

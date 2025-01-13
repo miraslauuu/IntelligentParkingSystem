@@ -1,0 +1,9 @@
+Prostokąt 1: x=497, y=553, w=223, h=129
+Prostokąt 2: x=571, y=837, w=129, h=223
+Prostokąt 3: x=435, y=836, w=127, h=223
+Prostokąt 4: x=299, y=837, w=127, h=221
+Prostokąt 5: x=165, y=837, w=126, h=221
+Prostokąt 6: x=31, y=838, w=125, h=220
+Prostokąt 7: x=16, y=557, w=219, h=128
+Prostokąt 8: x=204, y=19, w=155, h=267
+Prostokąt 9: x=369, y=19, w=155, h=267
