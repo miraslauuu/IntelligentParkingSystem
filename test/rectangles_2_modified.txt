@@ -1,6 +1,6 @@
-Prostokąt 6: x=16, y=11, w=128, h=218
-Prostokąt 5: x=202, y=15, w=126, h=218
-Prostokąt 4: x=387, y=17, w=125, h=217
-Prostokąt 3: x=11, y=493, w=131, h=225
-Prostokąt 2: x=201, y=496, w=128, h=224
-Prostokąt 1: x=388, y=496, w=128, h=223
+Prostokąt 8: x=569, y=748, w=187, h=324
+Prostokąt 9: x=296, y=743, w=188, h=327
+Prostokąt 10: x=16, y=743, w=194, h=331
+Prostokąt 11: x=570, y=33, w=188, h=328
+Prostokąt 12: x=297, y=26, w=188, h=330
+Prostokąt 13: x=17, y=22, w=192, h=332

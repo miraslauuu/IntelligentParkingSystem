@@ -2,8 +2,8 @@ import cv2
 
 cv2.namedWindow("Podgląd wideo", cv2.WINDOW_NORMAL)  # Wymuszenie działania okna na Mac/Linux
 
-video_path = "parking_clear.mp4"  # Podmień na ścieżkę do filmu
-# video_path = "parking_2_clear.mp4"  # Podmień na ścieżkę do filmu
+video_path = "parking_clear_1_UPDATE.mp4"  
+#video_path = "parking_clear_2_UPDATE.mp4"  
 
 cap = cv2.VideoCapture(video_path)
 

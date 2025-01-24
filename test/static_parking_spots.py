@@ -19,9 +19,9 @@ rectangles = load_rectangles("rectangles_1_modified.txt")
 
 cv2.namedWindow("Podgląd wideo", cv2.WINDOW_NORMAL)  # Wymuszenie działania okna na Mac/Linux
 
-#video_path = "parking_clear.mp4" # kawałek parkingu bez pojazdów
-#video_path = "parking_full_1.mp4"  # cały filmik
-video_path = "parking_z_pojazdami.mp4"  # kawałek parkingu z pojazdami
+#video_path = "parking_clear_1_UPDATE.mp4" # kawałek parkingu bez pojazdów
+#video_path = "parking_1_full_UPDATE.mp4"  # cały filmik
+video_path = "parking_z_pojazdami_1_UPDATE.mp4"
 
 cap = cv2.VideoCapture(video_path)
 

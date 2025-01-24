@@ -22,9 +22,9 @@ start_number = 8
 
 cv2.namedWindow("Podgląd wideo", cv2.WINDOW_NORMAL)  # Wymuszenie działania okna na Mac/Linux
 
-#video_path = "parking_2_clear.mp4" #kawałek parkingu bez pojazdów
-#video_path = "parking_2_clear.mp4" # cały filmik
-video_path = "parking_z_pojazdami_2.mp4" # kawałek z pojazdami
+#video_path = "parking_2_clear_2_UPDATE.mp4" #kawałek parkingu bez pojazdów
+#video_path = "parking_2_full_UPDATE.mp4" # cały filmik
+video_path = "parking_z_pojazdami_2_UPDATE.mp4" # kawałek z pojazdami
 
 cap = cv2.VideoCapture(video_path)
 
